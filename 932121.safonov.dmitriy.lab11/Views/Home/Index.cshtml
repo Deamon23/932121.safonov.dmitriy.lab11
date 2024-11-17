@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Calc Service Demonstration</h1>
+<ul>
+    <li><a href="@Url.Action("PassUsingModel", "Calc")">Using Model Calc</a></li>
+    <li><a href="@Url.Action("PassUsingViewData", "Calc")">Using ViewData Calc</a></li>
+    <li><a href="@Url.Action("PassUsingViewBag", "Calc")">Using ViewBag Calc</a></li>
+    <li><a href="@Url.Action("PassUsingServiceInjection", "Calc")">Using Service Injection Calc</a></li>
+</ul>
+
+<footer>
+    <div>
+        <span class="text-muted">© 2019 - Backend1</span>
+    </div>
+</footer>

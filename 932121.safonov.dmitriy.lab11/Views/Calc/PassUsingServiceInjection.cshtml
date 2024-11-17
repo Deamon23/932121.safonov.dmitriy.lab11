@@ -1,0 +1,9 @@
+﻿@model CalcModel
+
+<h2>Результаты вычислений (Service Injection)</h2>
+<p>Первое число: @Model.FirstValue</p>
+<p>Второе число: @Model.SecondValue</p>
+<p>Сумма: @Model.Sum</p>
+<p>Разность: @Model.Difference</p>
+<p>Произведение: @Model.Product</p>
+<p>Частное: @(Model.SecondValue != 0 ? Model.Quotient.ToString() : "Деление на ноль невозможно.")</p>
