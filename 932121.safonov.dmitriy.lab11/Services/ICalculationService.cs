@@ -4,6 +4,6 @@ namespace _932121.safonov.dmitriy.lab11.Services
 {
     public interface ICalculationService
     {
-        CalcModel Calculate(int firstValue, int secondValue);
+        CalcServiceModel Calculate(int firstValue, int secondValue);
     }
 }

@@ -7,8 +7,4 @@
     <RootNamespace>_932121.safonov.dmitriy.lab11</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
-  </ItemGroup>
-
 </Project>

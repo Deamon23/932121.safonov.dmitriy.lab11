@@ -3,16 +3,16 @@ using _932121.safonov.dmitriy.lab11.Services;
 
 public class CalculationService : ICalculationService
 {
-    public CalcModel Calculate(int firstValue, int secondValue)
+    public CalcServiceModel Calculate(int firstValue, int secondValue)
     {
-        return new CalcModel
+        return new CalcServiceModel
         {
             FirstValue = firstValue,
             SecondValue = secondValue,
-            Sum = firstValue + secondValue,
-            Difference = firstValue - secondValue,
-            Product = firstValue * secondValue,
-            Quotient = secondValue != 0 ? (double)firstValue / secondValue : double.NaN
+            Add = firstValue + secondValue,
+            Sub = firstValue - secondValue,
+            Mult = firstValue * secondValue,
+            Div = secondValue != 0 ? (double)firstValue / secondValue : double.NaN
         };
     }
 }
