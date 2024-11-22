@@ -1,7 +1,6 @@
 ﻿using _932121.safonov.dmitriy.lab11.Models;
-using _932121.safonov.dmitriy.lab11.Services;
 
-public class CalculationService : ICalculationService
+public class CalcService
 {
     public CalcServiceModel Calculate(int firstValue, int secondValue)
     {
@@ -12,7 +11,7 @@ public class CalculationService : ICalculationService
             Add = firstValue + secondValue,
             Sub = firstValue - secondValue,
             Mult = firstValue * secondValue,
-            Div = secondValue != 0 ? (double)firstValue / secondValue : double.NaN
+            Div = secondValue != 0 ? (double?)(firstValue / secondValue) : null
         };
     }
 }

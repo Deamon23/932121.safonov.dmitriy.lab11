@@ -1,10 +1,8 @@
-using _932121.safonov.dmitriy.lab11.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddScoped<ICalculationService, CalculationService>();
+builder.Services.AddScoped<CalcService>();
 
 var app = builder.Build();
 

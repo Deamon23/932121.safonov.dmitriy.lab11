@@ -7,7 +7,6 @@ namespace _932121.safonov.dmitriy.lab11.Models
         public int Add { get; set; }
         public int Sub { get; set; }
         public int Mult { get; set; }
-        public double Div { get; set; }
-        public string ErrorMessage { get; set; }
+        public double? Div { get; set; }
     }
 }
